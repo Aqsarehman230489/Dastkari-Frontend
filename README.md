@@ -21,28 +21,28 @@ The platform aims to connect local Pakistani artists, allowing them to display t
 
 ## 🛠️ Tech Stack
 
-- **Frontend:** React.js, JSX, CSS  
-- **Routing:** React Router  
-- **Data Handling:** API  
-- **Deployment:** GitHub Pages  
-- **Design:** Responsive Web Design with clean UI/UX principles  
+- Frontend: React.js, JSX, CSS  
+- Routing: React Router  
+- Data Handling: API  
+- Deployment: GitHub Pages  
+- Design: Responsive Web Design with clean UI/UX principles  
 
 
 ## 🧪 How to Run Locally
 
-1. **Clone the repo**
+1. Clone the repo
    ```bash
    git clone https://github.com/Aqsarehman230489/Dastkari-Frontend
    cd Dastkari-Frontend
 ````
 
-2. **Install dependencies**
+2. **Install dependencies
 
    ```bash
    npm install
    ```
 
-3. **Start development server**
+3. Start development server
 
    ```bash
    npm run dev
@@ -52,7 +52,7 @@ The platform aims to connect local Pakistani artists, allowing them to display t
 
 ## 🙋‍♀️ Author
 
-* **Aqsa Rehman**
+* Aqsa Rehman
   Computer Science Student | Frontend Developer | DevOps Enthusiast
   GitHub: [Aqsarehman230489](https://github.com/Aqsarehman230489)
 
