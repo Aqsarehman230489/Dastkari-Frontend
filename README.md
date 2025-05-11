@@ -5,11 +5,12 @@
 Dastkari is a beautifully designed and responsive React.js-based artisan collaboration and marketplace website. This project showcases a modern frontend landing page with smooth scrolling navigation, login/registration functionality, and integration with an API to dynamically load painting products from the web.
 
 The platform aims to connect local Pakistani artists, allowing them to display their work, collaborate, and sell products globally while preserving cultural heritage.
-
+````
 ## 🌐 Live Demo
 
 👉 [View Live on GitHub Pages](https://aqsarehman230489.github.io/Dastkari-Frontend/)
 
+```markdown
 ## ✨ Features
 
 - 🚀 Responsive and modern landing page UI  
@@ -50,7 +51,7 @@ The platform aims to connect local Pakistani artists, allowing them to display t
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
-## 🙋‍♀️ Author
+## Author
 
 * Aqsa Rehman
   Computer Science Student | Frontend Developer | DevOps Enthusiast
