@@ -33,7 +33,7 @@ The platform aims to connect local Pakistani artists, allowing them to display t
 ## 🧪 How to Run Locally
 
 1. Clone the repo
-   ```bash
+   
    git clone https://github.com/Aqsarehman230489/Dastkari-Frontend
    cd Dastkari-Frontend
 ````
