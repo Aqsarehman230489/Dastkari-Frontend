@@ -26,8 +26,9 @@ The platform aims to connect local Pakistani artists, allowing them to display t
 - Routing: React Router  
 - Data Handling: API  
 - Deployment: GitHub Pages  
-- Design: Responsive Web Design with clean UI/UX principles  
-
+- Design: Responsive Web Design with clean UI/UX principles
+```
+```markdown
 
 ## 🧪 How to Run Locally
 
