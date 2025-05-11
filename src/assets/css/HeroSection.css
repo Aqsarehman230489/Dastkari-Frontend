@@ -1,0 +1,93 @@
+/* Hero Section */
+.carousel-inner {
+    max-height: 90vh; /* Set max height for the carousel inner container */
+}
+
+.carousel-item {
+    height: 90vh; /* Ensure each carousel item is also limited to 80vh */
+}
+
+.carousel-item img {
+    height: 100%; /* Make image take full height of the carousel item */
+    width: 100%;  /* Ensure the image covers the full width */
+    object-fit: cover; /* Cover the area and maintain aspect ratio */
+}
+
+/* Add a background overlay to improve text visibility */
+.carousel-caption {
+    
+    position: absolute;
+    top: 50%;
+    right: 0; /* Align text to the right */
+    transform: translateY(-50%); /* Vertically center the text */
+    text-align: right; /* Align the text content to the right */
+    color: white;
+    font-size: 40px; /* Slightly smaller font for better readability */
+    z-index: 10;
+    animation: fadeInUp 2s ease-out; /* Smooth and slower animation */
+    text-shadow: 5px 5px 20px rgb(0, 0, 0); /* Stronger shadow for better contrast */
+}
+
+.carousel-caption h5 {
+    margin-top: 30px;
+    font-size: 60px; /* Slightly smaller font for heading */
+    font-weight: bold;
+    text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.8); /* Strong shadow for better contrast */
+}
+
+.carousel-caption p {
+    font-size: 24px; /* Smaller font for the paragraph */
+    font-weight: lighter;
+    margin-top: 10px;
+    text-shadow: 3px 3px 15px rgba(0, 0, 0, 0.7); /* Strong shadow for paragraph */
+}
+
+/* Styling for the button */
+.carousel-caption .btn {
+    margin-top: 8px;
+    margin-bottom: 29px;
+    padding: 13px 20px;
+    font-size: 16px; /* Adjusted for better readability */
+    background-color: #ff4d00;
+    border: none;
+    border-radius: 25px;
+    text-transform: uppercase; /* Makes the button text bold and uppercase */
+    transition: all 0.3s ease; /* Smooth hover transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for the button */
+}
+
+.carousel-caption .btn:hover {
+    background-color: #e67e22;
+    transform: translateY(-5px); /* Button lifts slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+}
+
+
+
+/* Add overlay behind the text */
+.carousel-caption:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.852), rgba(0, 0, 0, 0.057)); /* Semi-transparent overlay */
+    z-index: -1; /* Place the overlay behind the text */
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.8rem; /* Smaller font size on mobile */
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem; /* Adjust paragraph font size */
+    }
+
+    .carousel-caption .btn {
+        font-size: 1rem; /* Make button text smaller */
+        padding: 10px 20px; /* Adjust padding for smaller screens */
+    }
+}

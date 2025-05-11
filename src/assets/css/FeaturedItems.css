@@ -1,0 +1,249 @@
+/* Main container */
+.product-listing-container {
+  width: 100%;
+  padding: 15px; /* Reduced padding */
+  background-color: #f9f9f9;
+ 
+}
+
+.page-title {
+  text-align: center;
+  font-size: 1.8rem; /* Smaller font size */
+  font-weight: 700;
+  color: #3c3c3c;
+  margin-bottom: 20px; /* Reduced margin */
+}
+
+/* Grid layout for product cards */
+.product-listing {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); /* Adjusted card size */
+  gap: 18px; /* Reduced gap */
+  justify-items: center;
+  padding: 0;
+}
+
+/* Product card styling */
+.product-card {
+  background-color: #fff;
+  border-radius: 18px; /* Smaller border radius */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Adjust height as needed */
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-8px); /* Subtle hover effect */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Product image styling */
+.product-image {
+  width: 100%;
+  height: 180px; /* Reduced image height */
+  object-fit: cover;
+  border-bottom: 1px solid #e0e0e0;
+  transition: transform 0.3s ease;
+}
+
+/* Show artist card on hover */
+.product-card:hover .artist-card {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(-8px); /* Adjusted hover animation */
+}
+
+/* Product info section */
+.product-info {
+  padding: 6px 18px; /* Reduced padding */
+  flex-grow: 1;
+}
+
+/* Styling for artist name */
+.artist-name {
+  font-size: 1rem; /* Smaller font size */
+  color: #ff5500;
+  cursor: pointer;
+  margin-bottom: 10px; /* Reduced margin */
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.artist-name:hover {
+  text-decoration: underline;
+  color: #ab3900;
+}
+
+.artist-card {
+  position: absolute;
+  top: -10px; /* Adjusted position */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px; /* Smaller width */
+  background-color: #fff;
+  border: 1px solid #ff5900;
+  border-radius: 8px;
+  padding: 5px; /* Reduced padding */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+}
+
+/* Styling for the artist image */
+.artist-image-container {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 2px; /* Reduced margin */
+}
+
+.artist-image {
+  width: 60px; /* Smaller size */
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ff5900;
+}
+
+.product-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 9px; /* Reduced gap */
+ 
+}
+
+/* Product buttons */
+.add-to-cart-btn {
+  width: 100%;
+  padding: 9px; /* Reduced padding */
+  font-size: 1.1rem; /* Smaller font size */
+  background-color: #f16522;
+  color: #fff;
+  border: none;
+  border-radius: 5px; /* Smaller border radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 16px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #ffffff;
+  border: 2px solid #ff5500;
+  color: #ff5500;
+  border-radius: 5px;
+}
+/* Product Name */
+.product-name {
+  font-size: 1.3rem; /* Slightly larger font for prominence */
+  font-weight: 600; /* Bold text for emphasis */
+  color: #333; /* Darker color for readability */
+  margin-bottom: 4px; /* Space below the name */
+  text-align: center; /* Center-align the text */
+  overflow: hidden; /* Handle long names */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Keep text in a single line */
+}
+
+/* Product Price */
+.product-price {
+  font-size: 1.1rem; /* Standard font size */
+  font-weight: 500; /* Slightly bold for visibility */
+  color: #ff5500; /* Distinctive orange for pricing */
+  margin-bottom: 4px; /* Space below the price */
+  text-align: center; /* Center-align the price */
+}
+
+/* Product Description */
+.product-description {
+  font-size: 1rem; /* Slightly smaller font size */
+  font-weight: 400; /* Normal weight for description */
+  color: #666; /* Gray color for subtleness */
+  text-align: justify; /* Justify text for readability */
+  margin-bottom: 5px; /* Space below the description */
+  line-height: 1.4; /* Increase line spacing for better readability */
+  max-height: 3.6em; /* Limit description height */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  display: -webkit-box; /* For multi-line ellipsis */
+ 
+  -webkit-box-orient: vertical; /* Required for multi-line ellipsis */
+}
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.product-item {
+  width: 200px;
+  height: 200px;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+#load-more-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.load-more-btn {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #f16522;
+  border: 2px solid #f16522;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+}
+
+.load-more-btn:hover {
+  background-color: #f16522;
+  color: white;
+  border: none;
+}
+
+.loading-dots {
+  display: none;
+  margin-top: 10px;
+}
+
+.loading-dots span {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background-color: #ef9000;
+  border-radius: 50%;
+  animation: dot-blink 1.5s infinite ease-in-out;
+}
+
+.loading-dots span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.loading-dots span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+@keyframes dot-blink {
+  0%,
+  50%,
+  100% {
+    opacity: 0.5;
+  }
+  25%,
+  75% {
+    opacity: 1;
+  }
+}

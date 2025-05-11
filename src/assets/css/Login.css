@@ -1,0 +1,124 @@
+
+
+/* Background Section */
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url("../images/bg-7.jpg") no-repeat;
+    margin-top: 0px;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Form Box Styling */
+.form-box {
+    position: relative;
+    width: 400px;
+    background: rgba(125, 125, 125, 0.194); /* Slight transparency for backdrop */
+    border-radius: 20px;
+    backdrop-filter: blur(15px) brightness(80%);
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+/* Common Styles for Both Forms */
+h2 {
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+
+.inputbox {
+    position: relative;
+    margin: 30px 0;
+    width: 100%;
+    border-bottom: 2px solid #fff;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 16px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+
+.inputbox ion-icon {
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 24px;
+    top: 20px;
+}
+
+/* Label Animation */
+.inputbox input:focus~label,
+.inputbox input:valid~label {
+    top: -5px;
+}
+
+/* Button Styling */
+.button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: linear-gradient(rgb(255, 77, 0), rgb(217, 73, 34));
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Additional Styling */
+.forget {
+    margin: -10px 0 17px;
+    font-size: 14px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.forget a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Register Text */
+.register {
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.register p a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.hidden {
+    display: none;
+}

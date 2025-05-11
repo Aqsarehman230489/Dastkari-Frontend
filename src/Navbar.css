@@ -1,0 +1,89 @@
+/* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+  }
+  
+  .app {
+    width: 100%;
+  }
+  
+  /* Header styling */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    font-size: 24px;
+    color: #f16522;
+    font-weight: bold;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 500px;
+    margin: 0 20px;
+  }
+  
+  .search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .search-bar .search-btn {
+    padding: 8px 12px;
+    background-color: #f16522;
+    border: none;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .nav-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .user-actions a,
+  .user-actions span {
+    margin-left: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  
+
+/* Navigation */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+  background-color: #f9f9f9;
+}
+
+.nav-links a {
+  text-decoration: none;
+  margin: 0 10px;
+  color: #333;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #f16522;
+}

@@ -1,0 +1,252 @@
+/* .containere: Style for the main container */
+.containere {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    border-color: #f28e1b;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .titlee: Styling for the page title */
+.titlee {
+    text-align: center;
+    font-size: 2rem; /* Reduced font size */
+    color:#333;
+    
+}
+
+/* .rowe: Flexbox for creating a responsive layout of images */
+.rowe {
+    display: flex;
+    gap: 5px; /* Reduced gap */
+    justify-content: center;
+}
+
+/* .rowe img: Style for images within the row */
+.rowe img {
+    width: 30%; /* Increased width for better balance */
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* .row-2e img: Specific style for images within the second row */
+.row-2e img {
+    position: relative;
+    width: 0%; /* Adjusted width for better fit */
+}
+
+/* .overlape: Positioning of overlapping elements */
+.overlape {
+    position: absolute;
+    top: -60px; /* Reduced overlap */
+}
+
+/* .form-containere: Flexbox layout for form and description */
+.form-containere {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px; /* Reduced margin */
+}
+
+/* .registration-forme: Style for the left form */
+.registration-forme {
+    width: 45%; /* Adjusted width */
+}
+
+/* .form-rowe: Flexbox layout for form rows */
+.form-rowe {
+    display: flex;
+    gap: 10px; /* Reduced gap */
+}
+
+/* .form-rowe div: Style for individual form fields */
+.form-rowe div {
+    flex: 1;
+}
+
+/* .registration-forme input, buttone: Style for inputs and buttons in the form */
+.registration-forme input,
+.btnevente {
+    width: 100%;
+    padding: 8px; /* Reduced padding */
+    margin-bottom: 8px; /* Reduced margin */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* .btnevente: Style for event button */
+.btnevente {
+    background: #ef9000;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 50%; /* Adjusted width */
+    padding: 12px;
+}
+
+/* .btnevente:hover: Hover effect for event button */
+.btnevente:hover {
+    background: #ffffff;
+    color: rgb(255, 98, 0);
+    border: 3px solid;
+}
+
+/* .form-descriptione: Style for the right description section */
+.form-descriptione {
+    width: 45%; /* Adjusted width */
+    padding: 15px;
+    background-color: transparent;
+    border-radius: 8px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem; /* Reduced font size */
+    line-height: 1.5;
+    text-align: left;
+    border: 1px solid #ffffff;
+}
+
+/* .form-descriptione p: Style for paragraphs within the description */
+.form-descriptione p {
+    margin: 0;
+    font-size: 1rem; /* Reduced font size */
+    color: #555;
+}
+
+/* Media Query: Mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+    .containere {
+        padding: 10px;
+    }
+
+    /* .titlee: Reduce font size on mobile */
+    .titlee {
+        font-size: 1.8rem;
+    }
+
+    /* .form-containere: Stack form and description vertically */
+    .form-containere {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    /* .registration-forme, .form-descriptione: Set full width for form and description */
+    .registration-forme,
+    .form-descriptione {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* .form-rowe: Stack form inputs vertically */
+    .form-rowe {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* .registration-forme input, .btnevente: Adjust padding for smaller screens */
+    .registration-forme input,
+    .btnevente {
+        padding: 10px;
+    }
+
+    /* .btnevente: Set button width to 100% */
+    .btnevente {
+        width: 100%;
+    }
+}
+
+/* Media Query: Tablets (portrait) (max-width: 1024px) */
+@media (max-width: 1024px) {
+    .containere {
+        padding: 15px;
+    }
+
+    /* .form-containere: Stack form and description vertically */
+    .form-containere {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    /* .registration-forme, .form-descriptione: Set full width for form and description */
+    .registration-forme,
+    .form-descriptione {
+        width: 100%;
+    }
+
+    /* .form-rowe: Stack form inputs vertically */
+    .form-rowe {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    /* .registration-forme input, .btnevente: Adjust padding for smaller screens */
+    .registration-forme input,
+    .btnevente {
+        padding: 10px;
+    }
+
+    /* .btnevente: Set button width to 100% */
+    .btnevente {
+        width: 100%;
+    }
+}
+
+/* Larger Desktops */
+@media (min-width: 1200px) {
+    .containere {
+        padding: 20px;
+    }
+
+    /* .titlee: Increase font size for larger screens */
+    .titlee {
+        font-size: 2.5rem;
+    }
+
+    /* .form-containere: Align form and description */
+    .form-containere {
+        margin-left: 50px;
+    }
+
+    /* .registration-forme, .form-descriptione: Set width for form and description */
+    .registration-forme,
+    .form-descriptione {
+        width: 45%;
+    }
+
+    /* .form-descriptione: Adjust font size */
+    .form-descriptione {
+        font-size: 1.2rem;
+    }
+}
+
+ 
+  /* Styling for the select element */
+  select {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  /* Focus effect for the select */
+  select:focus {
+    border-color: #ff6600;
+    background-color: #e9f4ff;
+    outline: none;
+  }
+  
+  /* Disabled option (for placeholder) */
+  option:disabled {
+    color: #888;
+  }
+  
+  /* Option hover effect */
+  option:hover {
+    background-color: #ff6a00;
+  }
+  
