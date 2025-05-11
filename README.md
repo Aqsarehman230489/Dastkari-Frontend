@@ -36,7 +36,7 @@ The platform aims to connect local Pakistani artists, allowing them to display t
    cd Dastkari-Frontend
 ````
 
-2. **Install dependencies
+2. Install dependencies
 
    ```bash
    npm install
